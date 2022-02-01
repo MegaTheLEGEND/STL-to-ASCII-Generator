@@ -12,7 +12,7 @@ let lightMode = true
 const clock = new THREE.Clock()
 
 // Set rotate boolean variable
-let rotateModel = false
+let rotateModel = true
 
 //Ugh, don't ask about this stuff
 var userUploaded = false
@@ -75,7 +75,7 @@ document.body.appendChild(effect.domElement)
 document.getElementById("ascii").style.whiteSpace = "prewrap"
 
 stlLoader.load(
-    './models/test2.stl',
+    './models/test.stl',
     function (geometry) {
 
         myMesh.material = material;
