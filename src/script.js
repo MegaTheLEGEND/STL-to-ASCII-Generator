@@ -59,7 +59,7 @@ let effect;
 let characters = ' .:-+*=%@#'
 const effectSize = { amount: .205 }
 let backgroundColor = 'black'
-let ASCIIColor = 'white'
+let ASCIIColor = 'green'
 
 function createEffect() {
     effect = new AsciiEffect(renderer, characters, { invert: true, resolution: effectSize.amount });
@@ -221,7 +221,7 @@ function lightDark() {
         document.body.style.backgroundColor = 'black';
 
         backgroundColor = 'black'
-        ASCIIColor = 'white'
+        ASCIIColor = 'green'
 
         effect.domElement.style.color = ASCIIColor;
         effect.domElement.style.backgroundColor = backgroundColor;
@@ -230,7 +230,7 @@ function lightDark() {
         document.body.style.backgroundColor = 'white';
 
         backgroundColor = 'white'
-        ASCIIColor = 'black'
+        ASCIIColor = 'green'
 
         effect.domElement.style.color = ASCIIColor;
         effect.domElement.style.backgroundColor = backgroundColor;
